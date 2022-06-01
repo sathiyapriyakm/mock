@@ -1,0 +1,20 @@
+input{
+    height:40px;
+    width:300px;
+    background-color: ivory;
+}
+#submit{
+    height:40px;
+    width:100px
+}
+#card{
+    font-weight:bolder;
+    font-size:larger;
+    background-color: white;
+    border:10px solid darkolivegreen;
+    border-radius: 15px;
+}
+body{
+    background-image: url("https://i.tribune.com.pk/media/images/698891-tumblr_mzviolFaMrxvfko_-1398170374/698891-tumblr_mzviolFaMrxvfko_-1398170374.jpg");
+    
+}

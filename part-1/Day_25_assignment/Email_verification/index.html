@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email verification</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body style="background-color:lightgrey">
+    <div>
+        <div class="container">
+            <div class="row" style="display:flex;justify-content:center">
+                <h1  class="text-center" id="title">Verify the email instantly</h1>
+            </div>
+            <p class="text-center">Identify the spam email while authenticating your users</p>
+            <div class="row mb-4" style="display:flex;justify-content:center"> </div>
+            <div class="row mb-4" style="display:flex;justify-content:center">
+                <form id="myform">
+                    <input type="email"  id="searchemail" placeholder="Enter your user email"required>
+                    <input type="submit" value="Search" id="submit" style="background-color:lightseagreen">
+                </form>
+            </div>
+            <div class="card" id="card" style="height:20vh;display:flex;justify-content:center">
+                <div class="card-body">
+                  <div class="mb-4" id="status"></div>
+                  <div class="mb-4" id="deliverable"></div>
+                </div>
+              </div>          
+        </div>    
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  
+</body>
+</html>

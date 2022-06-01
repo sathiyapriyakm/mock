@@ -1,0 +1,71 @@
+Lavish to Everyone (10:18 AM)
+CSS
+What is Css?
+How to Use css in different ways?
+1.Internal
+2.Inline
+3.External
+Css Selectors
+Css Properties
+
+Css=>
+Html+FIll color,design or Animation =>Css
+Cascading  Style Sheet
+
+
+1.presentation,Styling,formatting and doing small level animation  
+2.Second pillar 
+
+filename.css
+link
+
+
+<style>
+
+
+</style>
+
+Css Syntax:
+selector{
+property:Values
+}
+1.Universal Selector-=>*
+2.Class selctor class="container"==> .container
+3.Id selctor=>id="idname"==> #idname
+4.Element=h1,p,input,list,table
+
+
+
+
+Me to SAI MOHAN (Direct Message) (10:10 AM)
+yellow
+Me to SAI MOHAN (Direct Message) (10:21 AM)
+Sir yesterday universal selector * is mentioned but not explained.
+SAI MOHAN to Everyone (10:29 AM)
+https://gist.github.com/MohanCloud-stack/157b982fb390fb147a6da01b45949d78
+SAI MOHAN to Everyone (11:05 AM)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            background-color: green;
+            position: fixed;
+            top: 30px;
+        }
+        .main{
+            background-color: yellow;
+            top:0px;
+            position: sticky;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">this is div</div>
+   <div style="padding-bottom: 200%;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, ipsam. Delectus explicabo illo tempora neque corrupti molestiae repudiandae iure voluptates commodi fuga, blanditiis saepe impedit. Minima atque ad dolores facilis.</div>
+</body>
+</html>

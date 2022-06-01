@@ -1,0 +1,24 @@
+input{
+    height:50px;
+    width:500px;
+    background-color: white;
+}
+#submit{
+    height:50px;
+    width:100px
+}
+#card{
+    font-weight:bolder;
+    font-size:larger;
+    background-color: white;
+    border:10px solid darkblue;
+    border-radius: 25px;
+}
+h1,p{
+    color:darkblue
+}
+
+body{
+    
+    background-image: url("https://static3.depositphotos.com/1000899/128/i/950/depositphotos_1285763-stock-photo-big-green-email.jpg");
+}

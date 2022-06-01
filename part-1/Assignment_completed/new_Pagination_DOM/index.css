@@ -1,0 +1,25 @@
+
+table,tr,td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+#myTable{
+    margin: 80px 80px 80px 80px;
+}
+td,th{
+    width:300px;
+    height:60px;
+}
+table,th,td{
+    font-size:larger;
+}
+#pagination-wrapper{
+    display:flex;
+    justify-content: center;
+
+}
+button{
+    width:70px;
+    height:40px;
+    font-size:x-large;
+}

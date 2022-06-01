@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table,th,tr,td{
+            border:2px solid black;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="font-style:bold;padding-left:165px;">Health Chart</div><br>
+        <table style="font-weight:bold width:100%">
+            <tr>
+                <th rowspan="2">State of Health </th>
+                <th colspan="2">Fasting Value</th>
+                <th>After Eating</th>
+            </tr>
+            <tr>
+                <th>Minimum </th>
+                <th>Maximum</th>
+                <th>2 hrs after eating</th>
+            </tr>
+            <tr>
+                <td>Healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-Diadetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200</td>
+            </tr>
+            <tr>
+                <td>Diadetes</td>
+                <td>more than 126</td>
+                <td>N/A</td>
+                <td>More than 200</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

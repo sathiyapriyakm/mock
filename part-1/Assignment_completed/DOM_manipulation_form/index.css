@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    height:100%;
+    width:100%;
+}
+body{
+    height:100%;
+    width:100%;
+    background-color: #d5ddcf;
+}
+#f1{
+    padding-left: 20px;
+    font-size: larger;
+}
+input{
+    width:200px;
+    height:25px;
+}
+h4{
+    margin: 20px 0px;
+}
+#male{
+   padding-left:0px;margin-left:0px; 
+}
+#div1{
+    width:100%;
+}
+#div2{
+    display:inline;
+    float:left;
+    width:20%;
+}
+#div3{
+    display:inline;
+    float:left;
+    width:80%;
+}
+table,tr,th,td{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+th,td{
+    width:10%;
+}

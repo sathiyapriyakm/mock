@@ -1,0 +1,41 @@
+.container{
+    margin-top:30px;
+}
+p{
+    color:maroon;
+}
+
+input{
+    height:40px;
+    width:300px;
+    background-color: ivory;
+}
+#submit{
+    height:40px;
+    width:100px
+}
+#card{
+    height:25vh;
+    display:flex;
+    justify-content:center;
+    font-weight:bold;
+    font-size:larger;
+    background-color: white;
+    border:10px solid darkolivegreen;
+    border-radius: 15px;  
+}
+.row{
+    display:flex;
+    justify-content:center;
+}
+h1{
+    color:darkblue;
+}
+#submit{
+    background-color:darkgoldenrod;
+}
+
+body{
+    
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5a549bf64c0dbf97f730d260/1584560580781-3CF7HGCL1ISS1812NUIW/N0P0092+Coronavirus+Microsite+Banner_page-image_657x344.jpg");
+}

@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thirukkural app</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+</head>
+<body style="background-color:lightgrey">
+    <div>
+        <div class="container">
+            <div class="row" style="display:flex;justify-content:center">
+                <h1  class="text-center" id="title">Thirukkural App</h1>
+            </div>
+            <p class="text-center">Get the kural and its meaning</p>
+            <div class="row mb-4" style="display:flex;justify-content:center">
+            <img src="https://i.pinimg.com/474x/85/dc/d6/85dcd65e65040ce80a2ca4ed22ddd549.jpg" alt="Thiruvalluvar image">
+             </div>
+            <div class="row mb-4" style="display:flex;justify-content:center">
+                <form id="myform">
+                    <input type="number"  id="searchkural" placeholder="type number from 1 to 1330" required>
+                    <input type="submit" value="Search" id="submit" style="background-color:lightseagreen">
+                </form>
+            </div>
+            <div class="card" id="card" style="height:30vh;display:flex;justify-content:center">
+                <div class="card-body">
+                  <div class="mb-4" id="Adhikaram"></div>
+                  <div class="mb-4" id="kural"></div>
+                  <div class="mb-4" id="meaning"></div>
+                </div>
+              </div>          
+        </div>    
+    </div>
+    <script src="script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+  
+</body>
+</html>

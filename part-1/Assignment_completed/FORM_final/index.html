@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM FORM</title>
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+    crossorigin="anonymous"
+>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">  
+<link rel="stylesheet" href="index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+<body style="background-color:lightgray ;">
+      <div class="container-fluid">
+        <div class="row" style="display:flex;justify-content: center;"" >
+          <div class="col-md-12 col-sm-12 head">
+            <h1 id="title">Form Details</h1>
+            <p id="description">This task is to get user input as form and store it in table</p>
+          </div>
+          <!-- creating the form using bootstrap -->
+          <!-- provided function when the form is submitted -->
+        <form id="form" onsubmit="fillTable(); return false; required "> 
+            <div class="form-group">
+            <div class="row myRow">
+              <div class="col-md-1 col-sm-1"></div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <label for="FirstName">FirstName</label>
+                </div> 
+                <div class="col-md-1 col-sm-1">:</div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <input type="text" name="FirstName" id="first-name" placeholder="First Name" required >
+                </div> 
+            </div> 
+             <div class="row myRow">
+              <div class="col-md-1 col-sm-1"></div>
+              <div class="col-md-4 col-sm-4" >
+                <label for="lastName">LastName</label>
+              </div>
+              <div class="col-md-1 col-sm-1">:</div>
+              <div class="col-md-6 col-sm-6">
+                <input type="text" name="LastName" id="last-name" placeholder="Last Name" required >
+              </div>
+           </div>
+           <div class="row myRow">
+               <div class="col-md-1 col-sm-1"></div>
+               <div class="col-md-4 col-sm-4">
+                  <label for="address">Address</label>
+               </div>
+               <div class="col-md-1 col-sm-1">:</div>
+               <div class="col-md-6 col-sm-6">
+                   <textarea  name="address" id="address" placeholder="address" required></textarea>
+               </div>
+           </div> 
+           <div class="row myRow">
+               <div class="col-md-1 col-sm-1"></div>
+               <div class="col-md-4 col-sm-4">
+                    <label for="Pincode">Pincode</label>
+               </div>
+               <div class="col-md-1 col-sm-1">:</div>
+               <div class="col-md-6 col-sm-6">
+                 <input type="text" name="Pincode" id="pincode"  placeholder="pincode" required> 
+               </div>
+            </div>  
+            <div class="row myRow">
+               <div class="col-md-1 col-sm-1"></div>
+               <div class="col-md-4 col-sm-4">
+                  <label for="gender">Gender</label>
+               </div>
+               <div class="col-md-1 col-sm-1">:</div>
+               <div class="col-md-6 col-sm-6">
+                <input type="radio" name="gender" value="Male" required>Male
+                <input type="radio" name="gender" value="Female" required >Female
+                <input type="radio" name="gender"  value="Others" required>others
+               </div>
+            </div> 
+            <div class="row myRow">
+               <div class="col-md-1 col-sm-1"></div>
+               <div class="col-md-4 col-sm-4">
+                <label for="lastName">Choice of Food<br>
+                  <span class="text-muted">(choose atleast two foods)</span>
+                </label>
+               </div>
+               <div class="col-md-1 col-sm-1">:</div>
+               <div class="col-md-6 col-sm-6">
+                 <div class="col-md-12 col-sm-12">
+                  <input type="checkbox" name="food" value="Pizza"> Pizza
+                  <input type="checkbox" name="food"class="foodItem" value="Burger"> Burger
+                  <input type="checkbox" name="food"class="foodItem" value="KFC" > KFC
+                 </div>
+                    <div class="col-md-12 col-sm-12">
+                      <input type="checkbox" name="food"class="foodItem" value="Zinger" > Zinger
+                      <input type="checkbox" name="food" class="foodItem"value="Drinks" > Drinks
+                    </div>
+                    
+               </div>
+            </div> 
+            <div class="row myRow">
+               <div class="col-md-1 col-sm-1"></div>
+               <div class="col-md-4 col-sm-4">
+                <label for="State">State</label>
+               </div>
+               <div width="1vh"class="col-md-1 col-sm-1">:</div>
+               <div class="col-md-6 col-sm-6">
+                <input type="text" name="state" id="state" required>
+               </div>
+            </div> 
+            <div class="row myRow">
+              <div class="col-md-1 col-sm-1"></div>
+              <div class="col-md-4 col-sm-4">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-md-1 col-sm-1">:</div>
+              <div class="col-md-6 col-sm-6">
+                <input type="text" name="Country" id="country" required>
+              </div>
+            </div>  
+            <div class="row myRow">
+               <div class="col-md-4 col-sm-4"></div>
+               <div class="col-md-4 col-sm-4">
+                <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+                </div>
+               <div class="col-md-4 col-sm-4"></div> 
+            </div> 
+        </div>
+        </form>  
+    </div>
+  </div>
+  
+    <div style="margin-top:20px"class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 head">
+          <h1 >Form Database</h1>
+        </div>
+        <!-- creating a table for the values to be filled -->
+        <div style="overflow-x:auto;width:100%">
+       
+        <table id="myTable" class="table table-striped table-bordered">
+            <!-- <div class="col-md-12  col-sm-12"> -->
+            <thead>
+              <tr id='Tfname' >
+                <th  class="colHeading">FirstName</th>
+                <th class="colHeading">LastName</th>
+                <th class="colHeading" >Address</th>
+                <th class="colHeading">Pincode</th>
+                <th class="colHeading">Gender</th>
+                <th  class="colHeadingSpl">Choice of Food</th>
+                <th class="colHeading">State</th>
+                <th class="colHeading">country</th>
+               </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+            </div>
+        </table>
+      </div>
+      </div>
+    </div>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+          <script src="script.js"></script>
+</body>
+</html>
